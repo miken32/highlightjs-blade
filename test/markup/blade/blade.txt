@@ -1,0 +1,13 @@
+@php
+$foo = My::foo();
+@endphp
+<form method="post" action="{{ route("foo", ["id" => $id]) }}">
+    <div>
+        @csrf
+        @foreach ($foo as $bar)
+        {{-- commentary --}}
+        {!! $bar->description !!}
+        <input name="bar_{{ $bar->id }}" value="{{ $bar->name}}" />
+        @endforeach
+    </div>
+</form>

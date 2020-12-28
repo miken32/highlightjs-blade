@@ -1,0 +1,14 @@
+<span class="hljs-template-tag">@php</span><span class="php">
+<span class="hljs-variable">$foo</span> = My::foo();
+</span><span class="hljs-template-tag">@endphp</span><span class="xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;post&quot;</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{</span><span class="php"> route(<span class="hljs-string">&quot;foo&quot;</span>, [<span class="hljs-string">&quot;id&quot;</span> =&gt; <span class="hljs-variable">$id</span>]) </span><span class="hljs-template-variable">}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        </span><span class="hljs-template-tag">@csrf</span><span class="xml">
+        </span><span class="hljs-template-tag">@foreach</span><span class="xml"> ($foo as $bar)
+        </span><span class="hljs-comment">{{-- commentary --}}</span><span class="xml">
+        </span><span class="hljs-template-variable">{!!</span><span class="php"> <span class="hljs-variable">$bar</span>-&gt;description </span><span class="hljs-template-variable">!!}</span><span class="xml">
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;bar_</span></span></span><span class="hljs-template-variable">{{</span><span class="php"> <span class="hljs-variable">$bar</span>-&gt;id </span><span class="hljs-template-variable">}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{</span><span class="php"> <span class="hljs-variable">$bar</span>-&gt;name</span><span class="hljs-template-variable">}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> /&gt;</span>
+        </span><span class="hljs-template-tag">@endforeach</span><span class="xml">
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</span>
