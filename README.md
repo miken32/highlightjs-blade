@@ -38,3 +38,5 @@ for details.
 ### Author
 
 Michael Newton <miken32@gmail.com>
+
+[1]: https://github.com/miken32/highlightjs-blade/blob/master/LICENSE
