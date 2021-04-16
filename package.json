@@ -1,0 +1,16 @@
+{
+  "name": "highlightjs-blade",
+  "version": "0.9",
+  "description": "highlight.js syntax definition for Laravel Blade templates",
+  "main": "src/languages/blade.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miken32/highlightjs-blade.git"
+  },
+  "author": "Michael Newton <miken32@gmail.com>",
+  "license": "GPLv2",
+  "bugs": {
+    "url": "https://github.com/miken32/highlightjs-blade/issues"
+  },
+  "homepage": "https://github.com/miken32/highlightjs-blade"
+}
